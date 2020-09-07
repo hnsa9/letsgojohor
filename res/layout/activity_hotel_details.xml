@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetailsActivity">
+
+    <ImageView
+        android:id="@+id/image_details"
+        android:layout_width="410dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/bookmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/bookmark"
+        app:layout_constraintTop_toTopOf="@+id/bookmark"
+        app:srcCompat="@drawable/mapicon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loveicon" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="349dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotelName"
+                android:layout_width="336dp"
+                android:layout_height="36dp"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="219dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="74dp"
+                android:layout_height="20dp"
+                android:text="Contact"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="109dp"
+                android:layout_height="30dp"
+                android:text="Contact"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="335dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/hotelAddress"
+                android:layout_width="312dp"
+                android:layout_height="61dp"
+                android:text="Address"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="261dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amenities"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amenities"
+                android:layout_width="311dp"
+                android:layout_height="63dp"
+                android:text="Amenities"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="376dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/hotelDescription"
+                android:layout_width="327dp"
+                android:layout_height="379dp"
+                android:text="Description"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="468dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

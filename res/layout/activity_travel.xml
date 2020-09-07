@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blueredbg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="33dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="CityName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/attraction"
+            app:layout_constraintStart_toStartOf="@+id/attraction"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cityInfo"
+            android:layout_width="333dp"
+            android:layout_height="244dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="cityInfo"
+            android:textColor="@color/cardview_light_background" />
+
+        <ImageView
+            android:id="@+id/attraction"
+            android:layout_width="365dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:clickable="true"
+            android:src="@drawable/bb_attraction" />
+
+        <ImageView
+            android:id="@+id/activity"
+            android:layout_width="259dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:clickable="true"
+            android:src="@drawable/bb_activity" />
+
+        <ImageView
+            android:id="@+id/hotel"
+            android:layout_width="272dp"
+            android:layout_height="171dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:clickable="true"
+            android:src="@drawable/bb_hotel" />
+
+        <ImageView
+            android:id="@+id/event"
+            android:layout_width="284dp"
+            android:layout_height="168dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:clickable="true"
+            android:src="@drawable/bb_event" />
+
+        <ImageView
+            android:id="@+id/transport"
+            android:layout_width="258dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:clickable="true"
+            android:src="@drawable/bb_transport" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <!--  android:background="#AD00C2D4" -->

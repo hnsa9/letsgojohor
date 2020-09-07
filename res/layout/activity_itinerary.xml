@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueredbg"
+    tools:context=".ItineraryActivity">
+
+
+    <!--
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/startDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripName" /> -->
+
+
+    <TextView
+        android:id="@+id/citinerary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="41dp"
+        android:text="Create Trip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tripName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tripDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/destination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripName" />
+
+    <EditText
+        android:id="@+id/tripName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Trip Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tripDescription"
+        app:layout_constraintEnd_toEndOf="@+id/tripDescription"
+        app:layout_constraintStart_toStartOf="@+id/destination"
+        app:layout_constraintTop_toBottomOf="@+id/citinerary" />
+
+    <Spinner
+        android:id="@+id/destination"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Destination"
+        app:layout_constraintBottom_toTopOf="@+id/startDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripDescription" />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Start Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/endDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="End Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <Button
+        android:id="@+id/create"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:background="#3949AB"
+        android:text="@string/create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDate" />
+
+
+    <!--
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/bg_edittext"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="110dp" /> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

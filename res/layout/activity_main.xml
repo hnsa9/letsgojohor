@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueredbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/travelinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:clickable="true"
+        android:contentDescription="@string/travel"
+        android:focusable="true"
+        android:src="@drawable/travelinfo"
+        app:layout_constraintBottom_toBottomOf="@+id/itinerary"
+        app:layout_constraintEnd_toStartOf="@+id/itinerary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itinerary" />
+
+    <TextView
+        android:id="@+id/travelinfotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="@string/travel"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/travelinfo"
+        app:layout_constraintTop_toBottomOf="@+id/travelinfo" />
+
+    <ImageView
+        android:id="@+id/itinerary"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="66dp"
+        android:clickable="true"
+        android:contentDescription="@string/createitinerary"
+        android:focusable="true"
+        android:src="@drawable/itinerary"
+        app:layout_constraintBottom_toTopOf="@+id/currency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/travelinfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itinerarytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="205dp"
+        android:text="@string/itinerary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/itinerary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/currency"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="34dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/currency"
+        app:layout_constraintBottom_toBottomOf="@+id/currencytxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/traveltips"
+        app:layout_constraintTop_toBottomOf="@+id/itinerarytxt" />
+
+    <TextView
+        android:id="@+id/traveltipstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/ttips"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/favorite"
+        app:layout_constraintStart_toStartOf="@+id/traveltips" />
+
+    <ImageView
+        android:id="@+id/traveltips"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="31dp"
+        android:clickable="true"
+        android:contentDescription="@string/ttips"
+        android:focusable="true"
+        android:src="@drawable/tips"
+        app:layout_constraintBottom_toBottomOf="@+id/traveltipstxt"
+        app:layout_constraintEnd_toStartOf="@+id/currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travelinfotxt" />
+
+    <TextView
+        android:id="@+id/currencytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="275dp"
+        android:text="Currency Converter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/currency" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencytxt" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="91dp"
+        android:text="Favorite"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/currency"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

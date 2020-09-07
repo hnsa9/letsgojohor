@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LetsGoJohor</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="travel">Travel Information</string>
+    <string name="itinerary">Trip Planner</string>
+    <string name="ttips">Travel Tips</string>
+    <string name="currency">Convert Currency</string>
+    <string name="createitinerary">Create Itinerary</string>
+    <string name="create">Create</string>
+    <string name="currency1">eg. RPH</string>
+    <string name="convert1">Convert</string>
+    <string name="lgj">Let\'s Go Johor</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string-array name="cities">
+        <item>Tangkak</item>
+        <item>Segamat</item>
+        <item>Kluang</item>
+        <item>Mersing</item>
+        <item>Kota Tinggi</item>
+        <item>Kulai</item>
+        <item>Johor Bahru</item>
+        <item>Pontian</item>
+        <item>Batu Pahat</item>
+        <item>Muar</item>
+    </string-array>
+
+
+</resources>

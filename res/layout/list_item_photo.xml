@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/content"
+        android:layout_width="368dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        app:srcCompat="@drawable/johorflag" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginBottom="3dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+</LinearLayout>
